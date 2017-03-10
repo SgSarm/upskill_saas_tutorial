@@ -41,6 +41,9 @@ gem 'hirb', '0.7.3'
 # Use Devise for user authentication
 gem 'devise', '4.2.0'
 
+# Use Paperclip for image upload
+gem 'paperclip', '4.3.6'
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
