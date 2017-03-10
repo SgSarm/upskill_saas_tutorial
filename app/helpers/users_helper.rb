@@ -3,7 +3,7 @@ module UsersHelper
         if @user.profile.job_title == "Entwickler"
             "<i class='fa fa-code'></i>".html_safe
         elsif @user.profile.job_title == "Student"
-            "<i class='fa fa-weixin'>".html_safe
+            "<i class='fa fa-weixin'></i>".html_safe
         elsif @user.profile.job_title == "Animiations-Spezialist"
             "<i class='fa fa-camera'></i>".html_safe
         elsif @user.profile.job_title == "Autofahrer"
