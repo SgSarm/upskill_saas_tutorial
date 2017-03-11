@@ -1,6 +1,7 @@
 .avatar-show-img {
     width: 128px;
     height: 120px;
+   // border-radius: 50%;
 }
 
 
@@ -26,4 +27,16 @@
     width: 30px;
     height: 30px;
     text-align: center;
+}
+
+
+// User Index Page Styles
+.user-index-avatar {
+    width: 128px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.well.white-bg {
+    background-color: white;
 }
