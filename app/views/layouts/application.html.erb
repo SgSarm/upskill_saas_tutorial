@@ -34,6 +34,7 @@
         </div>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
+              <li><%= link_to "Calendar and Event-Overview", events_path %></li> 
               <li><%= link_to "Community", users_path %></li> 
               <li><%= link_to "My account", edit_user_registration_path  %></li>
             <% end %>
@@ -50,6 +51,7 @@
          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
         <% end %>
       </div>
+
       <%= yield %>
       
   </body>

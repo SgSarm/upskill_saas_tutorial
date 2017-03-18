@@ -44,6 +44,9 @@ gem 'devise', '4.2.0'
 # Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
 
+# Add gems for Fullcalendar
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
