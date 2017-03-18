@@ -7,7 +7,7 @@ class EventsController < ApplicationController
       redirect_to new_user_session_path	
     else 
     @events = Event.all
-  end
+    end
   end
 
   # GET /events/1
