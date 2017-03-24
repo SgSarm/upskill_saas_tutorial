@@ -21,29 +21,29 @@
         <% end %>
         
         <div class="field form-group text-left">
-        <%= f.label :title %>
-        <%= f.text_field :title, class: 'form-control' %>
+          <%= f.label :title %><b>:</b>
+           <%= @event.title %>
         </div>
         
         <div class="field form-group text-left">
-        <%= f.label :description %>
-        <%= f.text_area :description, class: 'form-control' %>
+        <%= f.label :description %><b>:</b>
+          <%= @event.description %>
         </div>
         
-        <div class="field form-group">
-        <%= f.label :start_time %>
-        <%= f.datetime_select :start_time, class: 'form-control' %>
+        <div class="field form-group text-left">
+        <%= f.label :start_time  %><b>:</b>
+         <%= @event.start_time %>
         </div>
         
-        <div class="field form-group">
-        <%= f.label :end_time %>
-        <%= f.datetime_select :end_time, class: 'form-control' %>
+        <div class="field form-group text-left">
+        <%= f.label :end_time %><b>:</b>
+        <%= @event.end_time %>
         </div>
         
         <div class="actions form-group text-center ">
-        <%= f.submit "Create Event", class: 'btn btn-success'%>
+        <%= link_to "Edit Event",  edit_event_path(@event), class: 'btn btn-default'%>
         
-        <%= link_to "Cancel Event",  events_path, class: 'btn btn-danger'%>
+        <%= link_to "Back",  events_path, class: 'btn btn-default'%>
         </div>
         <% end %>
         

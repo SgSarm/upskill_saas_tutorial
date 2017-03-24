@@ -1,6 +1,9 @@
-<h1>Editing Event</h1>
+
+<div class="home-callout text-center container-fluid">
+  <h3 class="text-center">Edit the event named <%= @event.title %></h3>
+</div>
+
 
 <%= render 'form', event: @event %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+
