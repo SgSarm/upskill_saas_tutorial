@@ -36,9 +36,26 @@ h1, h2, h3 {
     background: linear-gradient(to left, #ff00cc , #333399); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.home-background {
+  // Gradient provided by @_ighosh at uiGradients.com
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff00cc , #333399); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff00cc , #333399); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home-alertmessages {
+    // Gradient provided by @_ighosh at uiGradients.com
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff00cc , #333399); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff00cc , #333399); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
 // Nav Styles
 .navbar {
   border: none;
+  margin-bottom: 0px;
+  
 }
 .navbar-brand {
   font-family: 'Open Sans', sans-serif;
@@ -83,5 +100,4 @@ h1, h2, h3 {
 .alert-notice {
   display: none;
 }
-
 

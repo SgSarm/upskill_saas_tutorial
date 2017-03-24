@@ -1,14 +1,16 @@
 
-  <div class="home-callout text-center container-fluid">    
-  <h1>Events</h1>
+<div class="home-callout text-center container-fluid">
+  <h3 class="text-center">Create your very own event and add it to the calendar - right now!</h3>
 </div>
+
 <div class="container">
+
 
   <div class="row">
 
 <br>
 <table class="table">
-  <thead>
+  <thead class="thead-inverse">
     <tr>
       <th>Title</th>
       <th>Description</th>
@@ -38,8 +40,10 @@
 
 
 <br>
+        <div class="actions form-group text-center ">
+          <%= link_to 'New Event', new_event_path, class: 'btn btn-success' %>
+        </div>
 
-<%= link_to 'New Event', new_event_path %>
 
 
 
@@ -54,12 +58,7 @@
                         </script>
                     </div>
                 </div>    
-    
-    
-    
-    
-    
-    
-    
   </div>
 </div>
+
+

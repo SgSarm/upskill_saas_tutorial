@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>GroupCalendar</title>
     <%= csrf_meta_tags %>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -45,13 +47,14 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
+
     
-      <div class="container">
+    
+      <div class="container-fluid text-center home-alertmessages">
         <% flash.each do |type, msg| %>
          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
         <% end %>
-      </div>
-
+        </div>
       <%= yield %>
       
   </body>
