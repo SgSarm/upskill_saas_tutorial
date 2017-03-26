@@ -50,11 +50,12 @@
               <div class="col-md-12 centered">
                     <div id="calendar-1">
                         <script>
-                            $('#calendar-1').fullCalendar('removeEvents'); 
                             $('#calendar-1').fullCalendar({
                                 events: '/events.json',
-  
-                            });     
+                                eventClick: function(event) {
+                                    window.open(event.url);
+                                }
+                            });    
                         </script>
                     </div>
                 </div>    
