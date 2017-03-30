@@ -5,9 +5,11 @@ class ChatRoomsController < ApplicationController
     @chat_rooms = ChatRoom.all
   end
   
+  
   def new
     @chat_room = ChatRoom.new
   end
+    
     
   def create
     @chat_room = current_user.chat_rooms.build(chat_room_params)
@@ -18,6 +20,12 @@ class ChatRoomsController < ApplicationController
       render "new"
     end
   end
+  
+  
+  def show
+    @chat_room = ChatRoom.includes(:messages).find_by(id: params[:id])
+  end
+  
   
   def chat_room_params
     params.require(:chat_room).permit(:title)
